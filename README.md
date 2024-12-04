@@ -76,6 +76,8 @@ solver.findpath()
 solver.display_path()
 ```
 
+![maze with path ](bfs_coin_2.png)
+
 
 ---
 
