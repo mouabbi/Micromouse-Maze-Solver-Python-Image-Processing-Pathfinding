@@ -13,7 +13,8 @@ class MazeSolver:
         self.start = start  # Position de départ
         self.end = end  # Position d'arrivée
         self.check_positions()  # Vérifie que les positions de départ et d'arrivée sont valides
-
+    
+    
     def check_positions(self):
         """
         Vérifie si les positions de départ et d'arrivée sont valides (elles ne doivent pas être sur un mur).

@@ -1,4 +1,6 @@
+
 # 🧩 Maze Solver and Micromouse Pathfinding
+
 This project includes:
 
 - 🗺️ **MazeSolver**: A Python class for solving mazes using A* and BFS algorithms, with visualization capabilities.
@@ -26,22 +28,21 @@ The tools help simulate and solve maze navigation problems, useful for applicati
 
 1. 🛠️ **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/maze-solver.git
-   cd maze-solver
-
+   git clone https://github.com/mouabbi/Micromouse-Maze-Solver-Python-Image-Processing-Pathfinding.git
+   cd Micromouse-Maze-Solver-Python-Image-Processing-Pathfinding
+   ```
 
 2. 🛠️ **Install Dependencies**:  
    Ensure you have Python 3.7+ installed. Install the required packages:  
    ```bash
    pip install numpy matplotlib pillow heapq deque
-    ```
+   ```
 
 3. 🚀 **Setup Notebook Environment**:
    If Jupyter Notebook is not already installed, install it using:
-
-    ```bash
-    pip install notebook
-    ```
+   ```bash
+   pip install notebook
+   ```
 
 ---
 
@@ -54,18 +55,24 @@ The tools help simulate and solve maze navigation problems, useful for applicati
 from mazeSolver import MazeSolver
 import numpy as np
 
-# Example maze: 0 = path, 1 = wall
-maze = np.array([
-    [0, 1, 0, 0],
-    [0, 1, 0, 1],
-    [0, 0, 0, 1],
-    [1, 1, 0, 0]
-])
+# Example maze: generate_and_show_maze() function
+maze = generate_and_show_maze(image_path="cc.jpg", resolution=400, threshold=200)
+```
+![maze example](/images/maze_exp.png)
 
+#### Initialize solver & Start and End:
+```python
 start = (0, 0)
 end = (3, 3)
 solver = MazeSolver(maze, start, end)
 ```
+
+#### Display Maze with Start and End Positions:
+```python 
+solver.display_maze(resolution=32)
+```
+![maze with start and end positions](/images/maze_with_start_and_end.png)
+
 #### 🔍 Find a Path:
 ```python
 solver.findpath()
@@ -75,11 +82,9 @@ solver.findpath()
 ```python
 solver.display_path()
 ```
-
+![maze with solved path](/images/maze_solved.png)
 
 ---
-
-
 
 ## 📦 Dependencies
 
@@ -88,4 +93,4 @@ solver.display_path()
   - 🔢 `numpy`: Matrix manipulation
   - 📊 `matplotlib`: Visualization
   - 🖼️ `Pillow`: Image processing
-  - ⚙️ `heapq` and `deque` (Python standard library)
+  - ⚙️ `heapq` and `deque`: Python standard library
