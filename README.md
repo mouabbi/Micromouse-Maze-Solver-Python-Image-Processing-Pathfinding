@@ -82,7 +82,9 @@ solver.findpath()
 ```python
 solver.display_path()
 ```
+
 ![maze with solved path](/images/maze_solved.png)
+
 
 ---
 
