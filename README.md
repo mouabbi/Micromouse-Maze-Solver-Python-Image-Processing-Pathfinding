@@ -58,7 +58,9 @@ import numpy as np
 # Example maze: generate_and_show_maze() function
 maze = generate_and_show_maze(image_path="cc.jpg", resolution=400, threshold=200)
 ```
+
 ![maze example](/images/maze_exp.png)
+
 
 #### Initialize solver & Start and End:
 ```python
@@ -71,7 +73,9 @@ solver = MazeSolver(maze, start, end)
 ```python 
 solver.display_maze(resolution=32)
 ```
-![maze with start and end positions](/images/maze_with_start_and_end.png)
+
+ ![maze with start and end positions](/images/maze_with_start_ans_end.png)
+
 
 #### 🔍 Find a Path:
 ```python
