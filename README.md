@@ -1,6 +1,7 @@
 
 o add 2
 m add 1
+m add 3
 # 🧩 Maze Solver and Micromouse Pathfinding
 
 This project includes:
